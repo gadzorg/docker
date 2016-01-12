@@ -1,0 +1,9 @@
+= NGINX Container
+
+== Installation
+
+  docker build -t gorg/nginx .
+
+== Utilisation
+
+  docker run -t gorg/nginx -v ./conf-example:/etc/nginx -v /mnt/monsite_web:/usr/share/nginx/html -v /mnt/monsite_web/logs:/var/log/nginx
