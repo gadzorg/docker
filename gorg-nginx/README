@@ -1,4 +1,4 @@
-= NGINX Container
+NGINX Container
 
 == Installation
 
@@ -6,4 +6,5 @@
 
 == Utilisation
 
-  docker run -t gorg/nginx -v ./conf-example:/etc/nginx -v /mnt/monsite_web:/usr/share/nginx/html -v /mnt/monsite_web/logs:/var/log/nginx
+  docker run -d -P --name sdpv1-nginx -v /mnt/container_data/conf/nginx:/etc/nginx -v /mnt/container_data/www:/usr/share/nginx/html -v /mnt/container_data/logs:/var/log/nginx -t gorg/nginx
+
