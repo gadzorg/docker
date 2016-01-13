@@ -11,5 +11,7 @@ RUN apt-get update \
 
 USER root
 
+EXPOSE 9090
+
 CMD ["usr/sbin/php5-fpm", "--fpm-config", "/etc/php5/fpm/php-fpm.conf"]
 
