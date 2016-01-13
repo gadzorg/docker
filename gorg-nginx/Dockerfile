@@ -13,8 +13,6 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 	&& apt-get install -y ca-certificates nginx=${NGINX_VERSION} gettext-base \
 	&& rm -rf /var/lib/apt/lists/*
 
-# forward request and error logs to docker log collector
-
 EXPOSE 80 443
 USER root
 

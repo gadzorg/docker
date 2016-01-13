@@ -1,0 +1,9 @@
+= NGINX Container
+
+== Installation
+
+  docker build -t gorg/php-fpm .
+
+== Utilisation
+
+  docker run -t gorg/php-fpm -v ./conf-example:/etc/php5 -v /mnt/monsite_web:/www -v /mnt/monsite_web/logs:/var/log/nginx
